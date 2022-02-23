@@ -8,7 +8,7 @@ export const HeaderBg = styled.header`
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: #0f0b227a;
+  background-color: #0c09187a;
   border-bottom: 1px solid #18191f;
   backdrop-filter: blur(7px);
 
@@ -17,17 +17,33 @@ export const HeaderBg = styled.header`
 export const HeaderContent = styled.div`
 
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
   max-width: 1300px;
   margin: auto;
   flex-direction: row;
   align-items: center;
   height: 100%;
-  padding: 0px 40px;
 
 
   .logo{
     height: 40px;
   }
+`;
+
+export const HeaderNav = styled.nav`
+  
+  a{
+    padding: 20px;
+    text-decoration: none;
+    color: #ACA9AA;
+
+    &:hover{
+      color: white;
+    }
+  }
+
+
 `;
 

@@ -2,16 +2,17 @@ import React from 'react'
 import Particles from 'react-tsparticles'
 import { StyleParticles } from './styles'
 
-export default function ParticlesBg() {
+
+export default function ParticlesBg({ children }: any) {
   return (
-    <StyleParticles>
+    <StyleParticles className='oi'>
       <Particles
         className='wrapper'
         id="tsparticles"
         options={{
           background: {
             color: {
-              value: "#0f0b22",
+              value: "#0c0918",
             },
           },
           fullScreen: false,
@@ -83,6 +84,11 @@ export default function ParticlesBg() {
           detectRetina: true,
         }}
       />
+
+      <div className='contentTitle'>
+        {children}
+      </div>
+
     </StyleParticles>
   )
 }

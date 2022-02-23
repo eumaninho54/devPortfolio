@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;500&display=swap');
+
 *{
-  --primary-color: #0f0b22
+  --primary-color: #0f0b22;
+  font-family: 'Noto Sans Mono', monospace;
+  user-select: none;
 }
 
 body{
@@ -8,6 +12,22 @@ body{
   margin: 0;
 
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4f0db9; 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #782cf1; 
+}
+
 
 
 

@@ -5,6 +5,7 @@ import { SplashScreenBg, SplashScreenContent } from './styles'
 
 export default function SplashScreen() {
     const [opacity, setOpacity] = useState('100%')
+    const [display, setDisplay] = useState('initial')
 
     const defaultOptions: Options = {
         loop: true,
@@ -13,10 +14,13 @@ export default function SplashScreen() {
     }
     setTimeout(() => {
         setOpacity(() => '0%')
+        setTimeout( () => {
+            setDisplay( () => 'none')
+        }, 950)
     }, 3100)
 
     return (
-        <SplashScreenBg style={{ opacity: opacity }}>
+        <SplashScreenBg style={{ opacity: opacity, display: display }}>
             <SplashScreenContent>
                 <Lottie
                     options={defaultOptions}
