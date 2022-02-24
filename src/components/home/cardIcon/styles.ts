@@ -8,6 +8,17 @@ export const StyleCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  
+
+  &:hover{
+    border-color: white;
+  }
+
 `;
 
+
+export const StyleLink = {
+  color: 'white'
+}
 

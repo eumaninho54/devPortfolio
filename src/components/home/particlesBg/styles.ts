@@ -16,4 +16,16 @@ export const StyleParticles = styled.div`
 }
 `;
 
+export const ArrowSlide = styled.div`
+  position: absolute;
+  transition: 0.4s;
+  width: 100%;
+  text-align: center;
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+`
+;
 

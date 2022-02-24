@@ -1,10 +1,19 @@
 import React from 'react'
-import { StyleCard } from './styles'
+import { StyleCard, StyleLink } from './styles'
 
-export default function CardIcon({children}: any) {
+
+interface cardIcon {
+  href: string
+  children: object
+}
+
+export default function CardIcon({ href, children }: cardIcon) {
+
   return (
-    <StyleCard>
-      {children}
-    </StyleCard>
+    <a href={href} target="_blank" rel="noreferrer" style={StyleLink}>
+      <StyleCard>
+        {children}
+      </StyleCard>
+    </a>
   )
 }

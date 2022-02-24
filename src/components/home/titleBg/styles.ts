@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TitleText = styled.div`
+export const StyleTitleText = styled.div`
 
   width: 645px;
   margin: auto;
@@ -24,7 +24,7 @@ export const TitleText = styled.div`
   }
 `;
 
-export const TitleIcons = styled.div`
+export const StyleTitleIcons = styled.div`
   width: 335px;
   margin: auto;
   display: flex;
@@ -32,6 +32,6 @@ export const TitleIcons = styled.div`
   align-items: center;
   justify-content: space-evenly;
   margin-top: 25px;
-  
 `;
+
 

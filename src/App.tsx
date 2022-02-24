@@ -1,10 +1,9 @@
-import React, { createRef, useEffect, useRef } from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom'
 
 import Header from './templates/header';
-import Home from './views/home';
-import SplashScreen from './views/splashScreen';
+import Home from './components/home';
+import SplashScreen from './components/splashScreen';
 
 function App() {
 
@@ -15,8 +14,6 @@ function App() {
       <Header />
 
       <Home />
-
-
 
 
     </BrowserRouter>

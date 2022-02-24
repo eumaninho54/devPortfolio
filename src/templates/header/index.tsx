@@ -10,10 +10,10 @@ export default function Header() {
         <img className='logo' src={logoM} alt="logoHTML" />
 
         <HeaderNav>
-          <a href="/">Quem é</a>
-          <a href="/">Conhecimentos</a>
-          <a href="/">Projetos</a>
-          <a href="/">Experiência</a>
+          <a href="/" target="_blank">Quem é</a>
+          <a href="/" target="_blank">Conhecimentos</a>
+          <a href="/" target="_blank">Projetos</a>
+          <a href="/" target="_blank">Experiência</a>
         </HeaderNav>
       </HeaderContent>
     </HeaderBg>

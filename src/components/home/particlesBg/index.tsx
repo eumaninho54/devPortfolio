@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Particles from 'react-tsparticles'
-import { StyleParticles } from './styles'
+import { StyleParticles, ArrowSlide } from './styles'
+import { BsArrowDownShort } from 'react-icons/bs';
 
 
 export default function ParticlesBg({ children }: any) {
+  const [posArrow, setPosArrow] = useState('90%')
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      posArrow === "90%" ? setPosArrow(() => '92%') : setPosArrow(() => '90%')
+    }, 1000);
+    return () => clearInterval(interval);
+  }, );
+
+  
   return (
     <StyleParticles className='oi'>
       <Particles
@@ -88,6 +99,12 @@ export default function ParticlesBg({ children }: any) {
       <div className='contentTitle'>
         {children}
       </div>
+
+      <ArrowSlide style={{top: posArrow}}>
+        <a href=''>
+          <BsArrowDownShort size={55}/>
+        </a>
+      </ArrowSlide>
 
     </StyleParticles>
   )

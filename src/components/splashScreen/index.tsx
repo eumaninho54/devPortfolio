@@ -14,6 +14,7 @@ export default function SplashScreen() {
     }
     setTimeout(() => {
         setOpacity(() => '0%')
+        
         setTimeout( () => {
             setDisplay( () => 'none')
         }, 950)
