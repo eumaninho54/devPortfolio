@@ -6,7 +6,7 @@ const StyleAboutMe = styled.section`
   background-color: #06060a;
 
   .content {
-    padding: 50px 40px;
+    padding: 80px 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

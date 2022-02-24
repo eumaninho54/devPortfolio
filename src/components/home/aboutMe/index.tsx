@@ -12,7 +12,7 @@ export default function AboutMe() {
                     <h1><FcCheckmark/> Quem é</h1>
                     <p>Salve, meu nome é Angelo Menti, ou <span>"Maninho"</span> para os mais íntimos. 
                     Sou desenvolvedor <span>Front-end Web & Mobile.</span> Construo interfaces modernas e atuais, dando vida à sua ideia com qualidade, responsividade, animações e performance.</p>
-                    <p>Quando não estou codando, jogo com meus amigos, assisto séries, saio conhecer gente nova, e adoro futebol.</p>
+                    <p>Quando não estou codando, jogo com meus amigos, assisto séries, saio para conhecer gente nova, e adoro futebol.</p>
                 </div>
 
                 <div className='contentImages'>
