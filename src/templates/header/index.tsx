@@ -3,7 +3,7 @@ import { HeaderBg, HeaderContent, HeaderNav} from './styles'
 import logoM from "../../assets/chavesM.png"
 import { scrollEffect } from '../../utils/scrollEffect'
 
-export default function Header({refAboutMe}: any) {
+export default function Header(props: any) {
 
   
   return (
@@ -12,9 +12,9 @@ export default function Header({refAboutMe}: any) {
         <img className='logo' src={logoM} alt="logoHTML" />
 
         <HeaderNav>
-          <span onClick={() => scrollEffect(refAboutMe)}>Quem é</span>
-          <span>Conhecimentos</span>
-          <span>Projetos</span>
+          <span onClick={() => scrollEffect(props.refAboutMe)}>Quem é</span>
+          <span onClick={() => scrollEffect(props.refSkills)}>Conhecimentos</span>
+          <span onClick={() => scrollEffect(props.refProjects)}>Projetos</span>
           <span>Experiência</span>
         </HeaderNav>
       </HeaderContent>

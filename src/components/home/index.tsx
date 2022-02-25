@@ -17,9 +17,13 @@ export default function Home(props: any) {
 				<AboutMe />
 			</div>
 
-			<Skills />
+			<div ref={props.refSkills}>
+				<Skills />
+			</div>
 
-			<Projects />
+			<div ref={props.refProjects}>
+				<Projects />
+			</div>
 		</StyleHomeDiv>
 	)
 }

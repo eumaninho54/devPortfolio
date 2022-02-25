@@ -8,14 +8,23 @@ import SplashScreen from './components/splashScreen';
 
 function App() {
   const aboutMeScroll = useRef(null)
-
+  const skillsScroll = useRef(null)
+  const projectsScroll = useRef(null)
   return (
     <BrowserRouter>
       <SplashScreen/>
 
-      <Header refAboutMe={aboutMeScroll}/>
+      <Header 
+        refAboutMe={aboutMeScroll}
+        refSkills={skillsScroll}
+        refProjects={projectsScroll}
+      />
       
-      <Home refAboutMe={aboutMeScroll} />
+      <Home 
+        refAboutMe={aboutMeScroll} 
+        refSkills={skillsScroll}
+        refProjects={projectsScroll}
+      />
 
     </BrowserRouter>
   );

@@ -8,7 +8,7 @@ const StyleSkills = styled.section`
   width: 100%;
   margin: auto;
   padding-bottom: 80px;
-  padding-top: 80px;
+  padding-top: 100px;
 
   .title{
     font-size: 35px;
