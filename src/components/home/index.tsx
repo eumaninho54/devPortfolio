@@ -13,17 +13,20 @@ export default function Home(props: any) {
 				<TitleBg />
 			</ParticlesBg>
 
-			<div ref={props.refAboutMe}>
-				<AboutMe />
-			</div>
+			<section style={props.style}>
+				<div ref={props.refAboutMe}>
+					<AboutMe />
+				</div>
 
-			<div ref={props.refSkills}>
-				<Skills />
-			</div>
+				<div ref={props.refSkills}>
+					<Skills />
+				</div>
 
-			<div ref={props.refProjects}>
-				<Projects />
-			</div>
+				<div ref={props.refProjects}>
+					<Projects />
+				</div>
+			</section>
+
 		</StyleHomeDiv>
 	)
 }

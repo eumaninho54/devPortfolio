@@ -6,7 +6,6 @@ import { scrollEffect } from '../../../utils/scrollEffect';
 
 export default function ParticlesBg(props: any) {
   const [posArrow, setPosArrow] = useState('0px')
-  //const arrowDownScroll = useRef(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -15,12 +14,10 @@ export default function ParticlesBg(props: any) {
     return () => clearInterval(interval);
   });
 
-
   return (
-    <StyleParticles className='oi'>
+    <StyleParticles>
       <Particles
         className='wrapper'
-        id="tsparticles"
         options={{
           background: {
             color: {
@@ -71,7 +68,7 @@ export default function ParticlesBg(props: any) {
               direction: "none",
               enable: true,
               outMode: "bounce",
-              random: false,
+              random: true,
               speed: 1,
               straight: false,
             },

@@ -14,14 +14,14 @@ function App() {
 
 
   setTimeout(() => {
-    setDisplay( () => "initial")
+    setDisplay(() => "initial")
   }, 3100)
 
   return (
     <BrowserRouter>
       <SplashScreen />
 
-      <header style={{transition: "1s", display: display}}>
+      <header style={{ transition: "1s", display: display }}>
         <Header
           refAboutMe={aboutMeScroll}
           refSkills={skillsScroll}
@@ -29,13 +29,12 @@ function App() {
         />
       </header>
 
-      <main style={{transition: "1s", display: display}}>
-        <Home
-          refAboutMe={aboutMeScroll}
-          refSkills={skillsScroll}
-          refProjects={projectsScroll}
-        />
-      </main>
+      <Home
+        style={{ transition: "1s", display: display }}
+        refAboutMe={aboutMeScroll}
+        refSkills={skillsScroll}
+        refProjects={projectsScroll}
+      />
 
     </BrowserRouter>
   );
