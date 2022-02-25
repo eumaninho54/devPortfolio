@@ -3,6 +3,7 @@ import TitleBg from './titleBg'
 import StyleHomeDiv from './styles'
 import AboutMe from './aboutMe'
 import Skills from './skills'
+import Projects from './projects'
 
 export default function Home(props: any) {
 
@@ -17,6 +18,8 @@ export default function Home(props: any) {
 			</div>
 
 			<Skills />
+
+			<Projects />
 		</StyleHomeDiv>
 	)
 }

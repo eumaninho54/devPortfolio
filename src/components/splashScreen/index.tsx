@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Lottie, { Options } from 'react-lottie'
-import animationData from "../../assets/logoHTML2.json"
+import animationData from "../../assets/logoHTML.json"
 import { SplashScreenBg, SplashScreenContent } from './styles'
 
 export default function SplashScreen() {

@@ -13,9 +13,9 @@ export default function ParticlesBg(props: any) {
       posArrow === "0px" ? setPosArrow(() => '30px') : setPosArrow(() => '0px')
     }, 1000);
     return () => clearInterval(interval);
-  }, );
+  });
 
-  
+
   return (
     <StyleParticles className='oi'>
       <Particles
@@ -103,10 +103,10 @@ export default function ParticlesBg(props: any) {
 
 
       <ArrowSlide className="oi">
-            <BsArrowDownShort 
-            onClick={() => scrollEffect(props.refAboutMe)}   
-            size={55}
-            style={{paddingTop: posArrow, transition: "0.4s", cursor: "pointer"}}/>
+        <BsArrowDownShort
+          onClick={() => scrollEffect(props.refAboutMe)}
+          size={55}
+          style={{ paddingTop: posArrow, transition: "0.4s", cursor: "pointer" }} />
 
       </ArrowSlide>
 
