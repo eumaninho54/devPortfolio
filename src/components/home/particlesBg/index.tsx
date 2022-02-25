@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Particles from 'react-tsparticles'
 import { StyleParticles, ArrowSlide } from './styles'
 import { BsArrowDownShort } from 'react-icons/bs';
+import { scrollEffect } from '../../../utils/scrollEffect';
 
-
-export default function ParticlesBg({ children }: any) {
-  const [posArrow, setPosArrow] = useState('90%')
+export default function ParticlesBg(props: any) {
+  const [posArrow, setPosArrow] = useState('0px')
+  //const arrowDownScroll = useRef(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      posArrow === "90%" ? setPosArrow(() => '92%') : setPosArrow(() => '90%')
+      posArrow === "0px" ? setPosArrow(() => '30px') : setPosArrow(() => '0px')
     }, 1000);
     return () => clearInterval(interval);
   }, );
@@ -97,13 +98,16 @@ export default function ParticlesBg({ children }: any) {
       />
 
       <div className='contentTitle'>
-        {children}
+        {props.children}
       </div>
 
-      <ArrowSlide style={{top: posArrow}}>
-        <a href=''>
-          <BsArrowDownShort size={55}/>
-        </a>
+
+      <ArrowSlide className="oi">
+            <BsArrowDownShort 
+            onClick={() => scrollEffect(props.refAboutMe)}   
+            size={55}
+            style={{paddingTop: posArrow, transition: "0.4s", cursor: "pointer"}}/>
+
       </ArrowSlide>
 
     </StyleParticles>

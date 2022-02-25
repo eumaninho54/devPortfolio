@@ -1,8 +1,10 @@
 import React from 'react'
 import { HeaderBg, HeaderContent, HeaderNav} from './styles'
 import logoM from "../../assets/chavesM.png"
+import { scrollEffect } from '../../utils/scrollEffect'
 
-export default function Header() {
+export default function Header({refAboutMe}: any) {
+
   
   return (
     <HeaderBg>
@@ -10,10 +12,10 @@ export default function Header() {
         <img className='logo' src={logoM} alt="logoHTML" />
 
         <HeaderNav>
-          <a href="/" target="_blank">Quem é</a>
-          <a href="/" target="_blank">Conhecimentos</a>
-          <a href="/" target="_blank">Projetos</a>
-          <a href="/" target="_blank">Experiência</a>
+          <span onClick={() => scrollEffect(refAboutMe)}>Quem é</span>
+          <span>Conhecimentos</span>
+          <span>Projetos</span>
+          <span>Experiência</span>
         </HeaderNav>
       </HeaderContent>
     </HeaderBg>

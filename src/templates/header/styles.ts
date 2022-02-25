@@ -34,7 +34,7 @@ export const HeaderContent = styled.div`
 
 export const HeaderNav = styled.nav`
   
-  a{
+  span{
     padding: 20px;
     text-decoration: none;
     color: #ACA9AA;

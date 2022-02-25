@@ -4,16 +4,19 @@ import StyleHomeDiv from './styles'
 import AboutMe from './aboutMe'
 import Skills from './skills'
 
-export default function Home() {
+export default function Home(props: any) {
 
 	return (
 		<StyleHomeDiv>
-			<ParticlesBg>
+			<ParticlesBg refAboutMe={props.refAboutMe}>
 				<TitleBg />
 			</ParticlesBg>
 
-			<AboutMe/>
-			<Skills/>
+			<div ref={props.refAboutMe}>
+				<AboutMe />
+			</div>
+
+			<Skills />
 		</StyleHomeDiv>
 	)
 }

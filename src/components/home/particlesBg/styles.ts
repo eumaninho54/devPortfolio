@@ -21,11 +21,7 @@ export const ArrowSlide = styled.div`
   transition: 0.4s;
   width: 100%;
   text-align: center;
+  top: 90%;
 
-  a{
-    text-decoration: none;
-    color: white;
-  }
-`
-;
+`;
 
