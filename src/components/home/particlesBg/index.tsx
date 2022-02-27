@@ -9,7 +9,7 @@ export default function ParticlesBg(props: any) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      posArrow === "0px" ? setPosArrow(() => '30px') : setPosArrow(() => '0px')
+      posArrow === "0px" ? setPosArrow(() => '14px') : setPosArrow(() => '0px')
     }, 1000);
     return () => clearInterval(interval);
   });
@@ -103,7 +103,12 @@ export default function ParticlesBg(props: any) {
         <BsArrowDownShort
           onClick={() => scrollEffect(props.refAboutMe)}
           size={55}
-          style={{ paddingTop: posArrow, transition: "0.4s", cursor: "pointer" }} />
+          style={
+            { paddingTop: posArrow, 
+            transition: "0.4s", 
+            cursor: "pointer", 
+            }
+          }/>
 
       </ArrowSlide>
 

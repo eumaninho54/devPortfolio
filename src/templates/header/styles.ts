@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderBg = styled.header`
+export const HeaderBg = styled.div`
   
   width: 100%;
   height: 80px;

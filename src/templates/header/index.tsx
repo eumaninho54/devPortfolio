@@ -15,7 +15,7 @@ export default function Header(props: any) {
           <span onClick={() => scrollEffect(props.refAboutMe)}>Quem é</span>
           <span onClick={() => scrollEffect(props.refSkills)}>Conhecimentos</span>
           <span onClick={() => scrollEffect(props.refProjects)}>Projetos</span>
-          <span>Experiência</span>
+          <span>Contate-me</span>
         </HeaderNav>
       </HeaderContent>
     </HeaderBg>

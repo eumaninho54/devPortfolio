@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Header from './templates/header';
 import Home from './components/home';
 import SplashScreen from './components/splashScreen';
+import Footer from './templates/footer';
 
 function App() {
   const [display, setDisplay] = useState("none")
@@ -14,7 +15,7 @@ function App() {
 
 
   setTimeout(() => {
-    setDisplay(() => "initial")
+    setDisplay(() => "block")
   }, 3100)
 
   return (
@@ -29,12 +30,16 @@ function App() {
         />
       </header>
 
-      <Home
-        style={{ transition: "1s", display: display }}
-        refAboutMe={aboutMeScroll}
-        refSkills={skillsScroll}
-        refProjects={projectsScroll}
-      />
+        <Home
+          style={{ transition: "1s", display: display }}
+          refAboutMe={aboutMeScroll}
+          refSkills={skillsScroll}
+          refProjects={projectsScroll}
+        />
+
+      <footer style={{ transition: "1s", display: display }}>
+        <Footer />
+      </footer>
 
     </BrowserRouter>
   );

@@ -1,19 +1,19 @@
 import ParticlesBg from './particlesBg'
 import TitleBg from './titleBg'
-import StyleHomeDiv from './styles'
 import AboutMe from './aboutMe'
 import Skills from './skills'
 import Projects from './projects'
+import ContactMe from './contactMe'
 
 export default function Home(props: any) {
 
 	return (
-		<StyleHomeDiv>
+		<main>
 			<ParticlesBg refAboutMe={props.refAboutMe}>
 				<TitleBg />
 			</ParticlesBg>
 
-			<section style={props.style}>
+			<div style={props.style}>
 				<div ref={props.refAboutMe}>
 					<AboutMe />
 				</div>
@@ -25,8 +25,12 @@ export default function Home(props: any) {
 				<div ref={props.refProjects}>
 					<Projects />
 				</div>
-			</section>
 
-		</StyleHomeDiv>
+				<div>
+					<ContactMe />
+				</div>
+			</div>
+
+		</main>
 	)
 }

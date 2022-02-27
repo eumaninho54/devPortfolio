@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-const StyleHomeDiv = styled.div`
-  height: 100vh;
+const StyleHomeDiv = styled.main`
 `;
 
 export default StyleHomeDiv;
