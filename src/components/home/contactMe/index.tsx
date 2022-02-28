@@ -103,7 +103,7 @@ export default function ContactMe() {
 
         <h1><FcDocument className='emoji'/> Veja meu currículo <FcDocument className='emoji'/></h1>
         <ThemeProvider theme={themeUi}>
-          <a href='https://onedrive.live.com/?cid=19C5065F9B752C49&id=19C5065F9B752C49%212182&parId=19C5065F9B752C49%212181&o=OneUp' target='_blank' rel="noreferrer"><Button type='submit' variant='contained'>Ver</Button></a>
+          <a href='https://drive.google.com/file/d/1Xf0bCu7iTcaZvXwjaV-wxtfHZriRs106/view?usp=sharing' target='_blank' rel="noreferrer"><Button type='submit' variant='contained'>Ver</Button></a>
         </ThemeProvider>
       </div>
     </StyleContactMe>

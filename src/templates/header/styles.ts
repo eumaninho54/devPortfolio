@@ -11,6 +11,13 @@ export const HeaderBg = styled.div`
   border-bottom: 1px solid #18191f;
   backdrop-filter: blur(7px);
 
+  .iconMobileMenu{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    animation: 0.4s;
+  }
+
   .content {
     display: flex;
     flex-direction: row;
@@ -43,18 +50,18 @@ export const HeaderBg = styled.div`
     }
   }
 
-  .menuItem{
+  .menuItem {
     background-color: #18191f;
     color: white;
   }
 
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 1050px) {
     span {
       display: none;
     }
 
     .toggleNavMobile {
-      display: initial !important;
+      display: initial;
     }
   }
 `;
