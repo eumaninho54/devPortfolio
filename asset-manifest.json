@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/devPortfolio/static/css/main.ef2d3ab4.css",
-    "main.js": "/devPortfolio/static/js/main.70b90caa.js",
+    "main.js": "/devPortfolio/static/js/main.9280fe9b.js",
     "static/js/415.ce69831e.chunk.js": "/devPortfolio/static/js/415.ce69831e.chunk.js",
     "static/js/787.128fc6e9.chunk.js": "/devPortfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/copy_netflix.png": "/devPortfolio/static/media/copy_netflix.b52bc4d37d49a534ca1b.png",
@@ -9,12 +9,12 @@
     "static/media/chavesM.png": "/devPortfolio/static/media/chavesM.a6654f6562279d0bc68a.png",
     "index.html": "/devPortfolio/index.html",
     "main.ef2d3ab4.css.map": "/devPortfolio/static/css/main.ef2d3ab4.css.map",
-    "main.70b90caa.js.map": "/devPortfolio/static/js/main.70b90caa.js.map",
+    "main.9280fe9b.js.map": "/devPortfolio/static/js/main.9280fe9b.js.map",
     "415.ce69831e.chunk.js.map": "/devPortfolio/static/js/415.ce69831e.chunk.js.map",
     "787.128fc6e9.chunk.js.map": "/devPortfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef2d3ab4.css",
-    "static/js/main.70b90caa.js"
+    "static/js/main.9280fe9b.js"
   ]
 }
