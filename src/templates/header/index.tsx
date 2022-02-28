@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { HeaderBg } from './styles'
 import logoM from "../../assets/chavesM.png"
 import { scrollEffect } from '../../utils/scrollEffect'
 import ClearAllIcon from '@mui/icons-material/ClearAll';
 import CloseIcon from '@mui/icons-material/Close';
 import { Backdrop, StyledModal } from '../../config/themes';
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 export default function Header(props: any) {
@@ -23,6 +25,11 @@ export default function Header(props: any) {
     setDisplayButtonModalClose('none')
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true  })
+  }, [])
+
+
   return (
     <HeaderBg>
       <div className='content'>
@@ -39,11 +46,22 @@ export default function Header(props: any) {
               open={open}
               onClose={handleClose}
               BackdropComponent={Backdrop}>
-              <div onClick={() => handleClose()} className='buttonsModal'>
-                <span onClick={() => scrollEffect(props.refAboutMe)}>Quem é</span>
-                <span onClick={() => scrollEffect(props.refSkills)}>Conhecimentos</span>
-                <span onClick={() => scrollEffect(props.refProjects)}>Projetos</span>
-                <span onClick={() => scrollEffect(props.refContactMe)}>Contate-me</span>
+              <div 
+                data-aos='fade-right' 
+                data-aos-easing="ease-in-out-cubic" 
+                onClick={() => handleClose()} className='buttonsModal'>
+                <span onClick={() => scrollEffect(props.refAboutMe)} >
+                    Quem é
+                </span>
+                <span onClick={() => scrollEffect(props.refSkills)}>
+                    Conhecimentos
+                </span>
+                <span  onClick={() => scrollEffect(props.refProjects)}>
+                    Projetos
+                </span>
+                <span onClick={() => scrollEffect(props.refContactMe)}>
+                    Contate-me
+                </span>
               </div>
             </StyledModal>
 

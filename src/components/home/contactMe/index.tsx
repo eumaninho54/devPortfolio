@@ -77,22 +77,19 @@ export default function ContactMe() {
         <form ref={form} onSubmit={sendEmail} className='infoContact'>
           <ThemeProvider theme={themeUi}>
             <TextField
-              required
               name='name'
               className='fieldContact'
-              label="Seu nome"
+              label="Digite seu nome"
               variant="outlined" />
             <TextField
-              required
               name='email'
               className='fieldContact'
-              label="Seu email"
+              label="Digite seu email"
               variant="outlined" />
             <TextField
-              required
               name='message'
               className='fieldContact'
-              label="Mensagem"
+              label="O que deseja me falar?"
               variant="outlined"
               multiline
               maxRows={5}

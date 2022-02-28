@@ -7,30 +7,30 @@ import ContactMe from './contactMe'
 
 export default function Home(props: any) {
 
-	return (
-		<main>
-			<ParticlesBg refAboutMe={props.refAboutMe}>
-				<TitleBg />
-			</ParticlesBg>
+  return (
+    <main>
+      <ParticlesBg refAboutMe={props.refAboutMe}>
+        <TitleBg />
+      </ParticlesBg>
 
-			<div style={props.style}>
-				<div ref={props.refAboutMe}>
-					<AboutMe />
-				</div>
+      <div style={props.style}>
+        <div ref={props.refAboutMe}>
+          <AboutMe />
+        </div>
 
-				<div ref={props.refSkills}>
-					<Skills />
-				</div>
+        <div ref={props.refSkills}>
+          <Skills />
+        </div>
 
-				<div ref={props.refProjects}>
-					<Projects />
-				</div>
+        <div ref={props.refProjects}>
+          <Projects />
+        </div>
 
-				<div ref={props.refContactMe}>
-					<ContactMe />
-				</div>
-			</div>
+        <div ref={props.refContactMe}>
+          <ContactMe />
+        </div>
+      </div>
 
-		</main>
-	)
+    </main>
+  )
 }

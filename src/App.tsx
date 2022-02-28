@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom'
 
@@ -14,7 +14,6 @@ function App() {
   const projectsScroll = useRef(null)
   const contactMeScroll = useRef(null)
 
-
   setTimeout(() => {
     setDisplay(() => "block")
   }, 3100)
@@ -23,7 +22,7 @@ function App() {
     <BrowserRouter>
       <SplashScreen />
 
-      <header style={{ transition: "1s", display: display }}>
+      <header style={{ transition: "1s", display: display,  }}>
         <Header
           refAboutMe={aboutMeScroll}
           refSkills={skillsScroll}

@@ -27,6 +27,9 @@ export const StyledModal = styled(ModalUnstyled)`
     flex-direction: column;
     text-align: center;
     outline: none;
+    height: 100%;
+    margin-top: 50px;
+    
 
     span{
       margin: 20px;

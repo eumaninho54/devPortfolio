@@ -6,7 +6,7 @@ import Points from '../../../assets/points.png'
 export default function AboutMe() {
 
   return (
-    <StyleAboutMe>
+    <StyleAboutMe >
       <div className="content">
         <div className='contentText'>
           <h1><FcCheckmark /> Quem é</h1>

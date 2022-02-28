@@ -8,7 +8,7 @@ const StyleContactMe = styled.section`
   justify-content: center;
 
   .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-    border: 2px solid white;
+    border: 2px solid gray;
   }
 
   h1 {
@@ -38,8 +38,9 @@ const StyleContactMe = styled.section`
     margin-bottom: 10px;
     max-width: 400px;
     width: 95%;
+  
   }
-
+  
 
   @media only screen and (max-width: 760px) {
     h1 {

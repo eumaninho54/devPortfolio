@@ -16,7 +16,7 @@ export const StyleTitleText = styled.div`
     margin: 0;
   }
 
-  span {
+  h2 {
     font-size: 40px;
   }
 
@@ -32,7 +32,7 @@ export const StyleTitleText = styled.div`
       font-size: 70px;
     }
 
-    span {
+    h2 {
       font-size: 35px;
     }
   }
@@ -49,7 +49,7 @@ export const StyleTitleText = styled.div`
       font-size: 40px;
     }
 
-    span {
+    h2 {
       font-size: 20px;
     }
   }

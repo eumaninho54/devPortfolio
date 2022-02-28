@@ -43,6 +43,7 @@ export const HeaderBg = styled.div`
       padding: 20px;
       text-decoration: none;
       color: #aca9aa;
+      cursor: pointer;
 
       &:hover {
         color: white;
