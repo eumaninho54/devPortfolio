@@ -37,12 +37,11 @@ const StyleCardSkill = styled.div`
   }
 
   @media only screen and (max-width: 1050px) {
-    width: 60%;
-    min-width: 400px;
+    width: 400px;
   }
 
   @media only screen and (max-width: 760px) {
-    min-width: auto;
+    max-width: 400px;
     width: 95%;
 
     h1 {

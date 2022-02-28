@@ -91,7 +91,7 @@ export default function ContactMe() {
             <TextField
               required
               name='message'
-              className='fieldMessage'
+              className='fieldContact'
               label="Mensagem"
               variant="outlined"
               multiline

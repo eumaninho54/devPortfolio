@@ -60,25 +60,26 @@ const StyleAboutMe = styled.section`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 60px 15px;
     }
 
     .contentText {
-      width: 90%;
-      text-align: center;
+      width: 100%;
 
       h1 {
         font-size: 25px;
+        text-align: center;
       }
 
       p {
         font-size: 15px;
+
       }
     }
 
     .contentImages {
       .myPhoto {
-        width: 250px;
-        height: 250px;
+        display: none;
       }
 
       .points {

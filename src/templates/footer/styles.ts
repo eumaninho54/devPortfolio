@@ -25,6 +25,10 @@ const StyleFooter = styled.footer`
 
   @media only screen and (max-width: 760px) {
     
+    .content{
+      padding-bottom: 30px;
+    }
+    
     p {
       margin: 0;
       font-size: 15px;

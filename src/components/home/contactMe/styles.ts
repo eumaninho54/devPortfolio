@@ -35,13 +35,10 @@ const StyleContactMe = styled.section`
 
   .fieldContact {
     margin-bottom: 10px;
-    width: 400px;
+    max-width: 400px;
+    width: 95%;
   }
 
-  .fieldMessage {
-    width: 400px;
-    margin-bottom: 20px;
-  }
 
   @media only screen and (max-width: 760px) {
     h1 {
@@ -51,6 +48,7 @@ const StyleContactMe = styled.section`
     a {
       font-size: 15px;
     }
+
   }
 `;
 
