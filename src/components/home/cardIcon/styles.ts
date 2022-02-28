@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyleCard = styled.div`
   border: 2px solid gray;
@@ -8,17 +8,17 @@ export const StyleCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
 
-  &:hover{
+  &:hover {
     border-color: white;
   }
 
+  @media only screen and (max-width: 760px) {
+    width: 45px;
+    height: 45px;
+  }
 `;
 
-
 export const StyleLink = {
-  color: 'white'
-}
-
+  color: "white",
+};

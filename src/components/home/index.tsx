@@ -26,7 +26,7 @@ export default function Home(props: any) {
 					<Projects />
 				</div>
 
-				<div>
+				<div ref={props.refContactMe}>
 					<ContactMe />
 				</div>
 			</div>

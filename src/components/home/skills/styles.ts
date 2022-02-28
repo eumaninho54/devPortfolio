@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyleSkills = styled.section`
   display: flex;
@@ -10,14 +10,28 @@ const StyleSkills = styled.section`
   padding-bottom: 80px;
   padding-top: 100px;
 
-  .title{
+  .title {
     font-size: 35px;
     margin: 0;
   }
 
-  .content{
-      display: flex;
-      flex-direction: row;
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .title {
+      font-size: 25px;
+    }
   }
 `;
 

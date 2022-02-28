@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Lottie, { Options } from 'react-lottie'
 import animationData from "../../assets/logoHTML.json"
-import { SplashScreenBg, SplashScreenContent } from './styles'
+import { SplashScreenBg } from './styles'
 
 export default function SplashScreen() {
     const [opacity, setOpacity] = useState('100%')
@@ -22,13 +22,13 @@ export default function SplashScreen() {
 
     return (
         <SplashScreenBg style={{ opacity: opacity, display: display }}>
-            <SplashScreenContent>
+            <div className='content'>
                 <Lottie
                     options={defaultOptions}
                     height={80}
-                    width={500}>
+                    width={350}>
                 </Lottie>
-            </SplashScreenContent>
+            </div>
         </SplashScreenBg>
     )
 }

@@ -1,10 +1,10 @@
-import { createTheme, TextField, ThemeProvider, Button, IconButton, Snackbar } from '@mui/material'
+import { TextField, ThemeProvider, Button, IconButton, Snackbar } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close';
 import React, { useRef, useState } from 'react'
 import StyleContactMe from './styles'
 import { FcVoicemail, FcDocument } from "react-icons/fc";
 import emailjs from '@emailjs/browser';
-import CardIcon from '../cardIcon';
+import { themeUi } from '../../../config/themes';
 
 export default function ContactMe() {
   const [open, setOpen] = useState(false)
@@ -31,14 +31,6 @@ export default function ContactMe() {
     e.currentTarget.reset()
 
   };
-
-  const themeUi = createTheme({
-    palette: {
-      text: { primary: '#ffffff', secondary: '#eeeeee' },
-      primary: { main: '#782cf1' },
-      secondary: { main: '#eeeeee' },
-    },
-  })
 
   const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === 'clickaway') {
@@ -111,7 +103,7 @@ export default function ContactMe() {
 
         <h1><FcDocument/> Veja meu currículo <FcDocument/></h1>
         <ThemeProvider theme={themeUi}>
-          <Button type='submit' variant='contained'>Ver</Button>
+          <a href='https://onedrive.live.com/?cid=19C5065F9B752C49&id=19C5065F9B752C49%212182&parId=19C5065F9B752C49%212181&o=OneUp' target='_blank' rel="noreferrer"><Button type='submit' variant='contained'>Ver</Button></a>
         </ThemeProvider>
       </div>
     </StyleContactMe>

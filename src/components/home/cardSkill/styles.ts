@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyleCardSkill = styled.div`
   width: 300px;
@@ -14,26 +14,45 @@ const StyleCardSkill = styled.div`
   border: 1px solid #eeeeee;
   transition: 0.4s;
 
-  &:hover{
+  &:hover {
     border: 1px solid #782cf1;
   }
 
-  .icons{
-      display: flex;
-      width: 100%;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-      margin: 0;
+  .icons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
   }
 
-  h1{
-      font-size: 35px;
-      margin-top: 0;
+  h1 {
+    font-size: 35px;
+    margin-top: 0;
   }
 
-  p{
+  p {
     width: 97%;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    width: 60%;
+    min-width: 400px;
+  }
+
+  @media only screen and (max-width: 760px) {
+    min-width: auto;
+    width: 95%;
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    p {
+      width: 97%;
+    }
   }
 `;
 

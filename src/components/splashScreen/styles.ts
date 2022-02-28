@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SplashScreenBg = styled.div`
   height: 100vh;
@@ -6,13 +6,15 @@ export const SplashScreenBg = styled.div`
   position: absolute;
   z-index: 3;
   background-color: black;
-  transition: 1.0s;
-  
-`;
+  transition: 1s;
 
-export const SplashScreenContent = styled.div`
+  .content {
     position: relative;
     top: 40%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 `;

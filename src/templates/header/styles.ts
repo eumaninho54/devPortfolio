@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderBg = styled.div`
-  
   width: 100%;
   height: 80px;
   position: fixed;
@@ -12,38 +11,50 @@ export const HeaderBg = styled.div`
   border-bottom: 1px solid #18191f;
   backdrop-filter: blur(7px);
 
-`;
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
 
-export const HeaderContent = styled.div`
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1300px;
-  margin: auto;
-  flex-direction: row;
-  align-items: center;
-  height: 100%;
-
-
-  .logo{
-    height: 40px;
-  }
-`;
-
-export const HeaderNav = styled.nav`
-  
-  span{
-    padding: 20px;
-    text-decoration: none;
-    color: #ACA9AA;
-
-    &:hover{
-      color: white;
+    .logo {
+      height: 40px;
     }
   }
 
+  .toggleNavMobile {
+    display: none;
+  }
 
+  .navScroll {
+    span {
+      padding: 20px;
+      text-decoration: none;
+      color: #aca9aa;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .menuItem{
+    background-color: #18191f;
+    color: white;
+  }
+
+  @media only screen and (max-width: 760px) {
+    span {
+      display: none;
+    }
+
+    .toggleNavMobile {
+      display: initial !important;
+    }
+  }
 `;
-

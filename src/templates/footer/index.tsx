@@ -6,7 +6,7 @@ export default function Footer() {
       <StyleFooter>
           <div className="content">
             <p>Projetado e desenvolvido por Angelo Menti.</p>
-            <p>Construido com <span>ReactJs</span> e <span>MUI</span>. Hospedado na <span>Vercel</span>.</p>
+            <p>Construido com <span>ReactJs</span> e <span>MUI</span>. Hospedado no <span>Github pages</span>.</p>
           </div>
       </StyleFooter>
   )

@@ -81,6 +81,11 @@ const StyleCardProject = styled.div`
     }
   }
 
+
+  @media only screen and (max-width: 1050px){
+    max-width: 90%;
+  }
+
 `;
 
 export default StyleCardProject;

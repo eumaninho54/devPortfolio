@@ -12,6 +12,7 @@ function App() {
   const aboutMeScroll = useRef(null)
   const skillsScroll = useRef(null)
   const projectsScroll = useRef(null)
+  const contactMeScroll = useRef(null)
 
 
   setTimeout(() => {
@@ -27,6 +28,7 @@ function App() {
           refAboutMe={aboutMeScroll}
           refSkills={skillsScroll}
           refProjects={projectsScroll}
+          refContactMe={contactMeScroll}
         />
       </header>
 
@@ -35,6 +37,7 @@ function App() {
           refAboutMe={aboutMeScroll}
           refSkills={skillsScroll}
           refProjects={projectsScroll}
+          refContactMe={contactMeScroll}
         />
 
       <footer style={{ transition: "1s", display: display }}>

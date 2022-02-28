@@ -3,4 +3,5 @@ export const scrollEffect = ( targetRef: any ) =>{
       behavior: 'smooth',
       block: 'start'
     });
+
   }
