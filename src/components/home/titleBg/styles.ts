@@ -56,11 +56,13 @@ export const StyleTitleText = styled.div`
 `;
 
 export const StyleTitleIcons = styled.div`
-  width: 335px;
+  max-width: 335px;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 25px;
+
 `;
