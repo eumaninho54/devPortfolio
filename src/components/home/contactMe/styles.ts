@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const StyleContactMe = styled.section`
+  user-select: text !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,6 +50,9 @@ const StyleContactMe = styled.section`
       font-size: 15px;
     }
 
+    .emoji{
+      display: none;
+    }
   }
 `;
 

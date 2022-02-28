@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const StyleFooter = styled.footer`
   width: 100%;
-  height: 100px;
   background-color: #06060a;
 
   .content {
@@ -26,12 +25,12 @@ const StyleFooter = styled.footer`
   @media only screen and (max-width: 760px) {
     
     .content{
-      padding-bottom: 30px;
+      padding-bottom: 60px;
     }
     
     p {
       margin: 0;
-      font-size: 15px;
+      font-size: 13px;
       text-align: center;
     }
   }

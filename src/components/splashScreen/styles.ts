@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SplashScreenBg = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   z-index: 3;
   background-color: black;
