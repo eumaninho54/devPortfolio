@@ -1,5 +1,5 @@
 <div align="center">
-  <img style="max-height: 100px" src="https://user-images.githubusercontent.com/87163356/156242764-dc9b22c7-9c03-40dd-a235-2f4fd1ad0fcd.png">
+  <img style="height: 100px" src="https://user-images.githubusercontent.com/87163356/156242764-dc9b22c7-9c03-40dd-a235-2f4fd1ad0fcd.png">
   <h1 size='10px' align= "center">devPortfolio - Angelo Menti</h1>
 </div>
 
