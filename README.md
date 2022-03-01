@@ -26,7 +26,7 @@ The project consists of a landing page built with:
 2. In the project directory, you can run: `npm start`
 3. Open http://localhost:3000 to view it in the browser.
 
-# Support me
+# Support me ☕
 
 Motivate me to continue studying and coding the world
 
