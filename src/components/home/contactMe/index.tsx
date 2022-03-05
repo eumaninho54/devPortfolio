@@ -24,9 +24,6 @@ export default function ContactMe() {
       }, (error) => {
         setMessage('Erro no envio!')
         setOpen(true)
-        console.log(REACT_APP_YOUR_SERVICE_ID)
-        console.log(REACT_APP_YOUR_TEMPLATE_ID)
-        console.log(REACT_APP_YOUR_USER_ID)
       });
     e.currentTarget.reset()
 
