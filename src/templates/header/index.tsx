@@ -8,8 +8,14 @@ import { Backdrop, StyledModal } from '../../config/themes';
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
+interface HeaderProps {
+  refAboutMe:   React.MutableRefObject<null>
+  refSkills:    React.MutableRefObject<null>
+  refProjects:  React.MutableRefObject<null>
+  refContactMe: React.MutableRefObject<null>
+}
 
-export default function Header(props: any) {
+export default function Header(props: HeaderProps) {
 
   const [displayButtonModalOpen, setDisplayButtonModalOpen] = useState('initial')
   const [displayButtonModalClose, setDisplayButtonModalClose] = useState('none')

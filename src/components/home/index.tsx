@@ -5,7 +5,15 @@ import Skills from './skills'
 import Projects from './projects'
 import ContactMe from './contactMe'
 
-export default function Home(props: any) {
+interface HomeProps {
+  style: object
+  refAboutMe:   React.MutableRefObject<null>
+  refSkills:    React.MutableRefObject<null>
+  refProjects:  React.MutableRefObject<null>
+  refContactMe: React.MutableRefObject<null>
+}
+
+export default function Home(props: HomeProps) {
 
   return (
     <main>

@@ -6,8 +6,6 @@ import { FcOpenedFolder } from 'react-icons/fc'
 import { BsArrowRight } from 'react-icons/bs'
 import imgCopyNetflix from "../../../assets/copy_netflix.png"
 
-//https://www.digitaland.tv/wp-content/uploads/2016/03/banner_developer-.jpg
-
 export default function Projects() {
   return (
     <StyleProjects>
@@ -56,13 +54,13 @@ export default function Projects() {
             pageLink={"https://ymaninho54.github.io/Copy-Netflix/"}
           />
           <CardProject 
-            imgTool_1={<SiJavascript color="#EFD81D" />}
+            imgTool_1 ={<SiJavascript color="#EFD81D" />}
             nameTool_1={<span style={{ color: "#EFD81D" }}>Javascript</span>}
 
-            imgTool_2={<SiTypescript color="#6B94CB" />}
+            imgTool_2 ={<SiTypescript color="#6B94CB" />}
             nameTool_2={<span style={{ color: "#6B94CB" }}>Typescript</span>}
 
-            imgTool_3={<SiReact color="#5ED3F3" />}
+            imgTool_3 ={<SiReact color="#5ED3F3" />}
             nameTool_3={<span style={{ color: "#5ED3F3" }}>React</span>}
 
             title={'Em construção'}

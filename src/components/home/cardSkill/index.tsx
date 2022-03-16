@@ -2,7 +2,7 @@ import React, { ReactChildren } from 'react'
 import StyleCardSkill from './styles'
 
 interface cardSkill{
-    children: any
+    children: React.ReactNode
     title: string
     text: string
 }

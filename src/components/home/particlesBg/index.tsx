@@ -4,7 +4,12 @@ import { StyleParticles, ArrowSlide } from './styles'
 import { BsArrowDownShort } from 'react-icons/bs';
 import { scrollEffect } from '../../../utils/scrollEffect';
 
-export default function ParticlesBg(props: any) {
+interface ParticlesBgProps {
+  children:   React.ReactNode
+  refAboutMe: React.MutableRefObject<null>
+}
+
+export default function ParticlesBg(props: ParticlesBgProps) {
   const [posArrow, setPosArrow] = useState('0px')
 
   useEffect(() => {

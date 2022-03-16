@@ -4,13 +4,17 @@ import { StyleCard, StyleLink } from './styles'
 
 interface cardIcon {
   href: string
-  children: object
+  children: React.ReactNode
 }
 
 export default function CardIcon({ href, children }: cardIcon) {
 
   return (
-    <a href={href} target="_blank" rel="noreferrer" style={StyleLink}>
+    <a 
+      href={href} 
+      target="_blank" 
+      rel="noreferrer" 
+      style={StyleLink}>
       <StyleCard>
         {children}
       </StyleCard>

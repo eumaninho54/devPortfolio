@@ -2,9 +2,25 @@ import React from 'react'
 import StyleCardProject from './styles'
 import { RiGithubFill, RiExternalLinkFill } from 'react-icons/ri';
 
+interface CardProjectProps {
 
+  imgTool_1: React.ReactNode
+  imgTool_2: React.ReactNode
+  imgTool_3: React.ReactNode
 
-export default function CardProject(props: any) {
+  nameTool_1: React.ReactNode
+  nameTool_2: React.ReactNode
+  nameTool_3: React.ReactNode
+
+  title: string
+  text: string
+  banner: string
+
+  githubLink: string
+  pageLink: string
+}
+
+export default function CardProject(props: CardProjectProps) {
   return (
     <StyleCardProject>
       <img src={props.banner} alt="bannerProjectCard" />
@@ -17,7 +33,6 @@ export default function CardProject(props: any) {
           </div>
         </div>
         <div className="groupTools">
-
           <div className='tool'>
             {props.imgTool_1}
             <span style={{marginLeft: "3px"}}>{props.nameTool_1}</span>
