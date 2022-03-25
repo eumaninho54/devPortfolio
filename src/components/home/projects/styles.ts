@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyleProjects = styled.section`
+export const StyleProjects = styled.section`
   background-color: #06060a;
   width: 100%;
   margin: auto;
@@ -11,6 +11,15 @@ const StyleProjects = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .groupCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   .titleProjects {
@@ -54,7 +63,50 @@ const StyleProjects = styled.section`
     a {
       font-size: 15px;
     }
+
+    p{
+      font-size: 12px;
+    }
   }
 `;
 
-export default StyleProjects;
+export const CarouselDiv = styled.div`
+
+  .rec.rec-dot_active {
+    background-color: #4f0db9;
+    width: 30px;
+    border-radius: 10px;
+  }
+
+  .rec.rec-dot:hover {
+    background-color: #4f0db9;
+  }
+
+  .cnxomI{
+    box-shadow: 0 0 1px 3px #8866c4;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px;
+
+  .carousel{
+    max-width: 1300px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .rec.rec-arrow{
+      width: 25px;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+`;
+

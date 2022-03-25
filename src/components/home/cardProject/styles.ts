@@ -7,6 +7,7 @@ const StyleCardProject = styled.div`
   margin: 50px 0;
   transition: 0.4s;
   padding-bottom: 30px;
+  height: max-content;
 
   &:hover {
     border: 1px solid #782cf1;
@@ -39,6 +40,7 @@ const StyleCardProject = styled.div`
   p {
     width: 95%;
     margin: 15px 10px 4px 10px;
+    word-wrap: break-word;
     color: #b6b6b6;
   }
 
@@ -87,10 +89,17 @@ const StyleCardProject = styled.div`
       width: 100%;
     }
 
+    .content{
+      height: 500px;
+    }
+
+    
+
     .tool {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     span {
       margin-left: 3px;
       font-size: 12px;
