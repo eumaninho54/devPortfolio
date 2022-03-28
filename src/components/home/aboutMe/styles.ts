@@ -73,7 +73,7 @@ const StyleAboutMe = styled.section`
 
       p {
         font-size: 15px;
-
+        text-align: center;
       }
     }
 

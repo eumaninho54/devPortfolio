@@ -99,13 +99,7 @@ export const CarouselDiv = styled.div`
 
   @media only screen and (max-width: 760px) {
     .rec.rec-arrow{
-      width: 25px;
-      height: 50px;
-      font-size: 20px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: none;
     }
   }
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const StyleCardProject = styled.div`
   width: 480px;
   border-radius: 7px;
@@ -75,6 +76,7 @@ const StyleCardProject = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+
     span {
       margin-left: 3px;
     }
@@ -83,6 +85,10 @@ const StyleCardProject = styled.div`
   @media only screen and (max-width: 1050px) {
     max-width: 480px;
     width: 90%;
+
+    h1{
+      font-size: 18px;
+    }
 
     .groupTools {
       width: 100%;

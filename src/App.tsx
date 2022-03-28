@@ -2,10 +2,10 @@ import { useRef, useState } from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom'
 
-import Header from './templates/header';
+import Header from './components/header';
 import Home from './components/home';
 import SplashScreen from './components/splashScreen';
-import Footer from './templates/footer';
+import Footer from './components/footer';
 
 function App() {
   const [display, setDisplay] = useState("none")
