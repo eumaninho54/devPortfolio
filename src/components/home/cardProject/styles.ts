@@ -7,7 +7,6 @@ const StyleCardProject = styled.div`
   margin: 50px 0;
   transition: 0.4s;
   padding-bottom: 30px;
-  height: max-content;
 
   &:hover {
     border: 1px solid #782cf1;
