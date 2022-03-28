@@ -82,7 +82,7 @@ export const CarouselDiv = styled.div`
     background-color: #4f0db9;
   }
 
-  .cnxomI{
+  .rec.rec-dot{
     box-shadow: 0 0 1px 3px #8866c4;
   }
 

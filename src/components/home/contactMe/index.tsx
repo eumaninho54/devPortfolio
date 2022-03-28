@@ -95,19 +95,19 @@ export default function ContactMe() {
               name="name"
               className="fieldContact"
               label="Digite seu nome"
-              variant="outlined"
+              variant="filled"
             />
             <TextField
               name="email"
               className="fieldContact"
               label="Digite seu email"
-              variant="outlined"
+              variant="filled"
             />
             <TextField
               name="message"
               className="fieldContact"
               label="O que deseja me falar?"
-              variant="outlined"
+              variant="filled"
               multiline
               maxRows={5}
             />

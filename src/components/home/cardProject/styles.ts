@@ -93,8 +93,6 @@ const StyleCardProject = styled.div`
       height: 500px;
     }
 
-    
-
     .tool {
     display: flex;
     flex-direction: row;

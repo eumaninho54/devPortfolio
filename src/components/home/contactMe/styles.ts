@@ -7,7 +7,7 @@ const StyleContactMe = styled.section`
   align-items: center;
   justify-content: center;
 
-  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  .MuiFilledInput-underline {
     border: 2px solid gray;
   }
 
@@ -32,6 +32,7 @@ const StyleContactMe = styled.section`
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-bottom: 100px;
   }
 
   .fieldContact {
