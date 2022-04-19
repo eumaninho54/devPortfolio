@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 const StyleCardProject = styled.div`
   width: 480px;
   border-radius: 7px;
@@ -8,6 +7,7 @@ const StyleCardProject = styled.div`
   margin: 50px 0;
   transition: 0.4s;
   padding-bottom: 30px;
+  height:min-content;
 
   &:hover {
     border: 1px solid #782cf1;
@@ -20,6 +20,7 @@ const StyleCardProject = styled.div`
     border-top-right-radius: 7px;
     opacity: 90%;
   }
+
 
   a {
     text-decoration: none;
@@ -42,6 +43,7 @@ const StyleCardProject = styled.div`
     margin: 15px 10px 4px 10px;
     word-wrap: break-word;
     color: #b6b6b6;
+    text-overflow: ellipsis;
   }
 
   .title {
@@ -76,38 +78,38 @@ const StyleCardProject = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    span {
-      margin-left: 3px;
-    }
   }
 
   @media only screen and (max-width: 1050px) {
     max-width: 480px;
-    width: 90%;
+    width: 95%;
 
-    h1{
+    h1 {
       font-size: 18px;
     }
 
     .groupTools {
       width: 100%;
+      flex-direction: row;
+      align-items: flex-start;
     }
 
-    .content{
+    .content {
       height: 500px;
     }
 
     .tool {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5px;
+      
 
-    span {
-      margin-left: 3px;
-      font-size: 12px;
+      span {
+        font-size: 12px;
+        text-align: center;
+      }
     }
-  }
   }
 `;
 
