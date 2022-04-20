@@ -5,6 +5,7 @@ import { SiAngular, SiSass, SiTypescript, SiJavascript, SiReact } from 'react-ic
 import { FcOpenedFolder } from 'react-icons/fc'
 import { BsArrowRight } from 'react-icons/bs'
 import imgCopyNetflix from "../../../assets/copy_netflix.png"
+import imgAuthLogin from "../../../assets/authLogin.png"
 import Carousel from 'react-elastic-carousel'
 
 const breakPoints = [
@@ -48,8 +49,8 @@ export default function Projects() {
                 pageLink={"https://ymaninho54.github.io/Copy-Netflix/"}/>
 
               <CardProject 
-                imgTool_1 ={<SiJavascript color="#EFD81D" />}
-                nameTool_1={<span style={{ color: "#EFD81D" }}>Javascript</span>}
+                imgTool_1 ={<></>}
+                nameTool_1={<></>}
 
                 imgTool_2 ={<SiTypescript color="#6B94CB" />}
                 nameTool_2={<span style={{ color: "#6B94CB" }}>Typescript</span>}
@@ -57,12 +58,12 @@ export default function Projects() {
                 imgTool_3 ={<SiReact color="#5ED3F3" />}
                 nameTool_3={<span style={{ color: "#5ED3F3" }}>React</span>}
 
-                title={'Em construção'}
-                text={"Atualmente devo estar codando este projeto, busque um café e aguarde que logo lhe mostro."}
-                banner={"https://www.digitaland.tv/wp-content/uploads/2016/03/banner_developer-.jpg"}
+                title={'AuthLogin'}
+                text={"Projeto de autenticação de token JWT. Login com Facebook e Google com token guardado em localStorage e liberando rotas."}
+                banner={imgAuthLogin}
 
-                githubLink={""}
-                pageLink={""}/>
+                githubLink={"https://github.com/ymaninho54/authLogin"}
+                pageLink={"https://ymaninho54.github.io/authLogin/"}/>
                 
               <CardProject 
                 imgTool_1 ={<SiJavascript color="#EFD81D" />}
