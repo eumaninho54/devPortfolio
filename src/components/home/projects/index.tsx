@@ -49,14 +49,13 @@ export default function Projects() {
                 pageLink={"https://ymaninho54.github.io/Copy-Netflix/"}/>
 
               <CardProject 
-                imgTool_1 ={<></>}
-                nameTool_1={<></>}
 
-                imgTool_2 ={<SiTypescript color="#6B94CB" />}
-                nameTool_2={<span style={{ color: "#6B94CB" }}>Typescript</span>}
 
-                imgTool_3 ={<SiReact color="#5ED3F3" />}
-                nameTool_3={<span style={{ color: "#5ED3F3" }}>React</span>}
+                imgTool_1 ={<SiTypescript color="#6B94CB" />}
+                nameTool_1={<span style={{ color: "#6B94CB" }}>Typescript</span>}
+
+                imgTool_2 ={<SiReact color="#5ED3F3" />}
+                nameTool_2={<span style={{ color: "#5ED3F3" }}>React</span>}
 
                 title={'AuthLogin'}
                 text={"Projeto de autenticação de token JWT. Login com Facebook e Google com token guardado em localStorage e liberando rotas."}
