@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/devPortfolio/static/css/main.268d20f8.css",
-    "main.js": "/devPortfolio/static/js/main.4b14f8bb.js",
+    "main.js": "/devPortfolio/static/js/main.f77f2a08.js",
     "static/js/415.ce69831e.chunk.js": "/devPortfolio/static/js/415.ce69831e.chunk.js",
     "static/js/787.128fc6e9.chunk.js": "/devPortfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/copy_netflix.png": "/devPortfolio/static/media/copy_netflix.b52bc4d37d49a534ca1b.png",
+    "static/media/authLogin.png": "/devPortfolio/static/media/authLogin.91e0fa04754d527f7528.png",
     "static/media/y.jpg": "/devPortfolio/static/media/y.221836db2bdfffb54908.jpg",
     "static/media/chavesM.png": "/devPortfolio/static/media/chavesM.a6654f6562279d0bc68a.png",
     "index.html": "/devPortfolio/index.html",
     "main.268d20f8.css.map": "/devPortfolio/static/css/main.268d20f8.css.map",
-    "main.4b14f8bb.js.map": "/devPortfolio/static/js/main.4b14f8bb.js.map",
+    "main.f77f2a08.js.map": "/devPortfolio/static/js/main.f77f2a08.js.map",
     "415.ce69831e.chunk.js.map": "/devPortfolio/static/js/415.ce69831e.chunk.js.map",
     "787.128fc6e9.chunk.js.map": "/devPortfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.268d20f8.css",
-    "static/js/main.4b14f8bb.js"
+    "static/js/main.f77f2a08.js"
   ]
 }
