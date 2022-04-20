@@ -49,8 +49,6 @@ export default function Projects() {
                 pageLink={"https://ymaninho54.github.io/Copy-Netflix/"}/>
 
               <CardProject 
-
-
                 imgTool_1 ={<SiTypescript color="#6B94CB" />}
                 nameTool_1={<span style={{ color: "#6B94CB" }}>Typescript</span>}
 
@@ -63,23 +61,6 @@ export default function Projects() {
 
                 githubLink={"https://github.com/ymaninho54/authLogin"}
                 pageLink={"https://ymaninho54.github.io/authLogin/"}/>
-                
-              <CardProject 
-                imgTool_1 ={<SiJavascript color="#EFD81D" />}
-                nameTool_1={<span style={{ color: "#EFD81D" }}>Javascript</span>}
-
-                imgTool_2 ={<SiTypescript color="#6B94CB" />}
-                nameTool_2={<span style={{ color: "#6B94CB" }}>Typescript</span>}
-
-                imgTool_3 ={<SiReact color="#5ED3F3" />}
-                nameTool_3={<span style={{ color: "#5ED3F3" }}>React</span>}
-
-                title={'Em construção'}
-                text={"Atualmente devo estar codando este projeto, busque um café e aguarde que logo lhe mostro."}
-                banner={"https://www.digitaland.tv/wp-content/uploads/2016/03/banner_developer-.jpg"}
-
-                githubLink={""}
-                pageLink={""}/>
             </Carousel>
           </CarouselDiv>
         </div>
