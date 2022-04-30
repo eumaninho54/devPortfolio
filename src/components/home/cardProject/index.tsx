@@ -17,7 +17,7 @@ interface CardProjectProps {
   banner: string
 
   githubLink: string
-  pageLink: string
+  pageLink?: string
 }
 
 export default function CardProject(props: CardProjectProps) {
@@ -29,7 +29,10 @@ export default function CardProject(props: CardProjectProps) {
           <h1>{props.title}</h1>
           <div className='links'>
             <a href={props.githubLink} target={"_blank"} rel="noreferrer"><RiGithubFill size={30}/></a>
-            <a href={props.pageLink} target={"_blank"} rel="noreferrer"><RiExternalLinkFill size={30}/></a>
+            {props.pageLink 
+            ? <a href={props.pageLink} target={"_blank"} rel="noreferrer"><RiExternalLinkFill size={30}/></a>
+            : null
+            }
           </div>
         </div>
         <div className="groupTools">
