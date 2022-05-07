@@ -22,7 +22,7 @@ export default function Projects() {
       <div className='content'>
         <div className="groupCard">
           <h1 className='titleProjects'><FcOpenedFolder /> Projetos <FcOpenedFolder /></h1>
-          <a href='https://github.com/ymaninho54' target="_blank" rel="noreferrer">
+          <a href='https://github.com/eumaninho54' target="_blank" rel="noreferrer">
             <h2 className='moreProjects'>Veja mais <BsArrowRight size={20} color='#722fe6' /></h2>
           </a>
 
@@ -44,8 +44,8 @@ export default function Projects() {
                 text={"Projeto de autenticação de token JWT. Login com Facebook e Google com token guardado em localStorage e liberando rotas."}
                 banner={imgAuthLogin}
 
-                githubLink={"https://github.com/ymaninho54/authLogin"}
-                pageLink={"https://ymaninho54.github.io/authLogin/"} />
+                githubLink={"https://github.com/eumaninho54/authLogin"}
+                pageLink={"https://eumaninho54.github.io/authLogin/"} />
 
               <CardProject
                 imgTool_1={<SiTypescript color="#6B94CB" />}
@@ -58,7 +58,7 @@ export default function Projects() {
                 text={"App que realiza conversão de moeda com valor buscado. Construído com auxílio do Expo cli."}
                 banner={imgYourCurrency}
 
-                githubLink={"https://github.com/ymaninho54/yourCurrency"} />
+                githubLink={"https://github.com/eumaninho54/yourCurrency"} />
 
               <CardProject
                 imgTool_1={<SiAngular color="#DD0031" />}
@@ -74,8 +74,8 @@ export default function Projects() {
                 text={"Uma cópia completa do site da Netflix, construido inteiramente em Angular, utilizando uma api pública para trazer os dados dos filmes."}
                 banner={imgCopyNetflix}
 
-                githubLink={"https://github.com/ymaninho54/Copy-Netflix"}
-                pageLink={"https://ymaninho54.github.io/Copy-Netflix/"} />
+                githubLink={"https://github.com/eumaninho54/Copy-Netflix"}
+                pageLink={"https://eumaninho54.github.io/Copy-Netflix/"} />
             </Carousel>
           </CarouselDiv>
         </div>

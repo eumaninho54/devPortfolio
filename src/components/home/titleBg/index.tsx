@@ -26,7 +26,7 @@ export default function TitleBg() {
           <FaLinkedin size={35} />
         </CardIcon>
 
-        <CardIcon href={"https://github.com/ymaninho54"}>
+        <CardIcon href={"https://github.com/eumaninho54"}>
           <FaGithub size={35} />
         </CardIcon>
 
