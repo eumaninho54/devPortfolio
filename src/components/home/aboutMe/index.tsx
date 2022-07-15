@@ -5,7 +5,6 @@ import Points from '../../../assets/points.png'
 import { RefContext } from '../../../context/refContext';
 import { useContext } from 'react';
 import { refContextProps } from '../../models/refContextModel';
-import AOS from 'aos';
 
 
 export default function AboutMe() {

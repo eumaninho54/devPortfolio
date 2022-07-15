@@ -1,7 +1,6 @@
-import React from 'react'
 import { StyleProjects, CarouselDiv } from './styles'
 import CardProject from '../cardProject'
-import { SiAngular, SiSass, SiTypescript, SiStyledcomponents, SiReact } from 'react-icons/si'
+import { SiAngular, SiSass, SiTypescript, SiReact } from 'react-icons/si'
 import { FcOpenedFolder } from 'react-icons/fc'
 import { BsArrowRight } from 'react-icons/bs'
 import imgCopyNetflix from "../../../assets/copy_netflix.png"

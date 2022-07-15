@@ -64,5 +64,4 @@ export const StyleTitleIcons = styled.div`
   align-items: center;
   justify-content: space-evenly;
   margin-top: 25px;
-
 `;

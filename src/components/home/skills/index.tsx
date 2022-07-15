@@ -1,14 +1,10 @@
 import React, { useContext } from 'react'
 import CardSkill from '../cardSkill'
 import StyleSkills from './styles'
-import { TiHtml5 } from "react-icons/ti";
-import { SiTypescript, SiJavascript, SiReact, SiAngular } from "react-icons/si";
-import { IoLogoCss3 } from "react-icons/io";
+import { SiTypescript, SiJavascript, SiReact, SiNodedotjs, SiCss3, SiHtml5 } from "react-icons/si";
 import { FcSupport } from "react-icons/fc";
 import { refContextProps } from '../../models/refContextModel';
 import { RefContext } from '../../../context/refContext';
-
-
 
 
 export default function Skills() {
@@ -18,15 +14,17 @@ export default function Skills() {
     <StyleSkills ref={skillsScroll}>
       <h1 className='title'><FcSupport /> Conhecimentos <FcSupport /></h1>
       <div className="content">
-        <CardSkill
+        <CardSkill 
+          timeDelay={100}
           title={'Design'}
           text={"Com eles consigo construir e estilizar minhas telas com qualidade e responsividade."}>
 
-          <TiHtml5 size={80} />
-          <IoLogoCss3 size={60} style={{ paddingTop: "12px" }} />
+          <SiHtml5 size={80} />
+          <SiCss3 size={80} />
         </CardSkill>
 
         <CardSkill
+          timeDelay={300}
           title={'Linguagens'}
           text={"Essas são as linguaguens que construo minhas lógicas e que dão vida à page."}>
 
@@ -35,11 +33,12 @@ export default function Skills() {
         </CardSkill>
 
         <CardSkill
+          timeDelay={500}
           title={'Frameworks'}
-          text={"React, React Native e Angular, estas são as bibliotecas que tenho conhecimento."}>
+          text={"React, React Native e Node utilizo para construir minhas aplicações web e mobile."}>
 
           <SiReact size={80} />
-          <SiAngular size={80} />
+          <SiNodedotjs size={80} />
         </CardSkill>
       </div>
     </StyleSkills>

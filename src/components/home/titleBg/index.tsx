@@ -4,13 +4,12 @@ import { StyleTitleText, StyleTitleIcons } from './styles'
 import CardIcon from '../cardIcon';
 import { useEffect } from 'react'
 import Aos from 'aos'
-import "aos/dist/aos.css"
-
+import "aos/dist/aos.css";
 
 export default function TitleBg() {
 
   useEffect(() => {
-    Aos.init({ duration: 2000, once: true  })
+    Aos.init({ duration: 2000, once: true })
   }, [])
 
   return (
@@ -21,7 +20,7 @@ export default function TitleBg() {
         <h2>Front-end Developer</h2>
       </StyleTitleText>
 
-      <StyleTitleIcons  data-aos='fade-down' data-aos-easing="ease-out-cubic">
+      <StyleTitleIcons data-aos='fade-down' data-aos-easing="ease-out-cubic">
         <CardIcon href={"https://www.linkedin.com/in/angelo-menti-663040210/"}>
           <FaLinkedin size={35} />
         </CardIcon>
