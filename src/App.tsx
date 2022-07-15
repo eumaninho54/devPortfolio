@@ -1,49 +1,32 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom'
-
 import Header from './components/header';
 import Home from './components/home';
-import SplashScreen from './components/splashScreen';
 import Footer from './components/footer';
+import { RefProvider } from './context/refContext';
+import { themeUi } from './config/themes';
+import { ThemeProvider } from '@mui/material';
+import Aos from 'aos';
 
 function App() {
-  const [display, setDisplay] = useState("none")
-  const aboutMeScroll = useRef(null)
-  const skillsScroll = useRef(null)
-  const projectsScroll = useRef(null)
-  const contactMeScroll = useRef(null)
 
-  setTimeout(() => {
-    setDisplay(() => "block")
-  }, 3100)
+  useEffect(() => {
+    Aos.init()
+  },[])
 
   return (
-    <BrowserRouter>
-      <SplashScreen />
+    <ThemeProvider theme={themeUi}>
+      <RefProvider>
+        <BrowserRouter>
+          <Header />
 
-      <header style={{ transition: "1s", display: display,  }}>
-        <Header
-          refAboutMe={aboutMeScroll}
-          refSkills={skillsScroll}
-          refProjects={projectsScroll}
-          refContactMe={contactMeScroll}
-        />
-      </header>
+          <Home />
 
-        <Home
-          style={{ transition: "1s", display: display }}
-          refAboutMe={aboutMeScroll}
-          refSkills={skillsScroll}
-          refProjects={projectsScroll}
-          refContactMe={contactMeScroll}
-        />
-
-      <footer style={{ transition: "1s", display: display }}>
-        <Footer />
-      </footer>
-
-    </BrowserRouter>
+          <Footer />
+        </BrowserRouter>
+      </RefProvider>
+    </ThemeProvider>
   );
 }
 

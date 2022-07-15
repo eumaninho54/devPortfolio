@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Particles from 'react-tsparticles'
 import { StyleParticles, ArrowSlide } from './styles'
 import { BsArrowDownShort } from 'react-icons/bs';
 import { scrollEffect } from '../../../utils/scrollEffect';
+import { refContextProps } from '../../models/refContextModel';
+import { RefContext } from '../../../context/refContext';
 
-interface ParticlesBgProps {
-  children:   React.ReactNode
-  refAboutMe: React.MutableRefObject<null>
-}
 
-export default function ParticlesBg(props: ParticlesBgProps) {
+export default function ParticlesBg({ children }: { children: React.ReactNode }) {
+  const { aboutMeScroll } = useContext<refContextProps>(RefContext)
   const [posArrow, setPosArrow] = useState('0px')
 
   useEffect(() => {
@@ -100,23 +99,21 @@ export default function ParticlesBg(props: ParticlesBgProps) {
       />
 
       <div className='contentTitle'>
-        {props.children}
+        {children}
       </div>
-
 
       <ArrowSlide className="oi">
         <BsArrowDownShort
-          onClick={() => scrollEffect(props.refAboutMe)}
+          onClick={() => scrollEffect(aboutMeScroll)}
           size={55}
           style={
-            { paddingTop: posArrow, 
-            transition: "0.4s", 
-            cursor: "pointer", 
+            {
+              paddingTop: posArrow,
+              transition: "0.4s",
+              cursor: "pointer",
             }
-          }/>
-
+          } />
       </ArrowSlide>
-
     </StyleParticles>
   )
 }

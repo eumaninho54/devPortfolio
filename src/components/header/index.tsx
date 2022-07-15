@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { HeaderBg } from './styles'
 import logoM from "../../assets/chavesM.png"
 import { scrollEffect } from '../../utils/scrollEffect'
@@ -7,16 +7,12 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Backdrop, StyledModal } from '../../config/themes';
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { RefContext } from '../../context/refContext';
+import { refContextProps } from '../models/refContextModel';
 
-interface HeaderProps {
-  refAboutMe:   React.MutableRefObject<null>
-  refSkills:    React.MutableRefObject<null>
-  refProjects:  React.MutableRefObject<null>
-  refContactMe: React.MutableRefObject<null>
-}
 
-export default function Header(props: HeaderProps) {
-
+export default function Header() {
+  const { aboutMeScroll, contactMeScroll, projectsScroll, skillsScroll} = useContext<refContextProps>(RefContext)
   const [displayButtonModalOpen, setDisplayButtonModalOpen] = useState('initial')
   const [displayButtonModalClose, setDisplayButtonModalClose] = useState('none')
   const [open, setOpen] = React.useState(false);
@@ -56,26 +52,26 @@ export default function Header(props: HeaderProps) {
                 data-aos='fade-right' 
                 data-aos-easing="ease-in-out-cubic" 
                 onClick={() => handleClose()} className='buttonsModal'>
-                <span onClick={() => scrollEffect(props.refAboutMe)} >
+                <span onClick={() => scrollEffect(aboutMeScroll)} >
                     Quem é
                 </span>
-                <span onClick={() => scrollEffect(props.refSkills)}>
+                <span onClick={() => scrollEffect(skillsScroll)}>
                     Conhecimentos
                 </span>
-                <span  onClick={() => scrollEffect(props.refProjects)}>
+                <span  onClick={() => scrollEffect(projectsScroll)}>
                     Projetos
                 </span>
-                <span onClick={() => scrollEffect(props.refContactMe)}>
+                <span onClick={() => scrollEffect(contactMeScroll)}>
                     Contate-me
                 </span>
               </div>
             </StyledModal>
 
           </div>
-          <span onClick={() => scrollEffect(props.refAboutMe)}>Quem é</span>
-          <span onClick={() => scrollEffect(props.refSkills)}>Conhecimentos</span>
-          <span onClick={() => scrollEffect(props.refProjects)}>Projetos</span>
-          <span onClick={() => scrollEffect(props.refContactMe)}>Contate-me</span>
+          <span onClick={() => scrollEffect(aboutMeScroll)}>Quem é</span>
+          <span onClick={() => scrollEffect(skillsScroll)}>Conhecimentos</span>
+          <span onClick={() => scrollEffect(projectsScroll)}>Projetos</span>
+          <span onClick={() => scrollEffect(contactMeScroll)}>Contate-me</span>
         </nav>
       </div>
     </HeaderBg>

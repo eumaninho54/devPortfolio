@@ -8,6 +8,9 @@ import imgCopyNetflix from "../../../assets/copy_netflix.png"
 import imgAuthLogin from "../../../assets/authLogin.png"
 import imgYourCurrency from "../../../assets/yourCurrency.png"
 import Carousel from 'react-elastic-carousel'
+import { RefContext } from '../../../context/refContext';
+import { useContext } from 'react';
+import { refContextProps } from '../../models/refContextModel';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -16,9 +19,10 @@ const breakPoints = [
 ]
 
 export default function Projects() {
+  const { projectsScroll } = useContext<refContextProps>(RefContext)
 
   return (
-    <StyleProjects>
+    <StyleProjects ref={projectsScroll}>
       <div className='content'>
         <div className="groupCard">
           <h1 className='titleProjects'><FcOpenedFolder /> Projetos <FcOpenedFolder /></h1>

@@ -5,40 +5,22 @@ import Skills from './skills'
 import Projects from './projects'
 import ContactMe from './contactMe'
 
-interface HomeProps {
-  style: object
-  refAboutMe:   React.MutableRefObject<null>
-  refSkills:    React.MutableRefObject<null>
-  refProjects:  React.MutableRefObject<null>
-  refContactMe: React.MutableRefObject<null>
-}
 
-export default function Home(props: HomeProps) {
+export default function Home() {
 
   return (
     <main>
-      <ParticlesBg refAboutMe={props.refAboutMe}>
+      <ParticlesBg>
         <TitleBg />
       </ParticlesBg>
 
-      <div style={props.style}>
-        <div ref={props.refAboutMe}>
-          <AboutMe />
-        </div>
+      <AboutMe />
 
-        <div ref={props.refSkills}>
-          <Skills />
-        </div>
+      <Skills />
 
-        <div ref={props.refProjects}>
-          <Projects />
-        </div>
+      <Projects />
 
-        <div ref={props.refContactMe}>
-          <ContactMe />
-        </div>
-      </div>
-
+      <ContactMe />
     </main>
   )
 }

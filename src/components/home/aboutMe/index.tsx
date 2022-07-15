@@ -2,11 +2,17 @@ import StyleAboutMe from './styles'
 import { FcCheckmark } from 'react-icons/fc';
 import AngeloPhoto from '../../../assets/y.jpg'
 import Points from '../../../assets/points.png'
+import { RefContext } from '../../../context/refContext';
+import { useContext } from 'react';
+import { refContextProps } from '../../models/refContextModel';
+import AOS from 'aos';
+
 
 export default function AboutMe() {
+  const { aboutMeScroll } = useContext<refContextProps>(RefContext)
 
   return (
-    <StyleAboutMe >
+    <StyleAboutMe ref={aboutMeScroll} data-aos="fade-right" data-aos-easing="ease-in-out">
       <div className="content">
         <div className='contentText'>
           <h1><FcCheckmark /> Quem é</h1>
