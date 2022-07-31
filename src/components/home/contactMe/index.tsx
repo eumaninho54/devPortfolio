@@ -4,13 +4,16 @@ import { FcDocument, FcVoicemail } from "react-icons/fc";
 import { RefContext } from "../../../context/refContext";
 import { useContext, useRef, useState } from "react";
 import { refContextProps } from "../../models/refContextModel";
-import { themeUi } from "../../../config/themes";
+import { Backdrop, StyledModal, themeUi } from "../../../config/themes";
 import CloseIcon from "@mui/icons-material/Close";
 import emailjs from "@emailjs/browser";
+import Lottie from 'react-lottie';
+import loadingLottie from '../../../assets/lottie/loading.json'
 
 export default function ContactMe() {
   const { contactMeScroll } = useContext<refContextProps>(RefContext)
-  const [open, setOpen] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
+  const [showLoading, setShowLoading] = useState(false);
   const [message, setMessage] = useState("");
   const form = useRef<HTMLFormElement>(null);
   const REACT_APP_YOUR_SERVICE_ID = process.env.REACT_APP_YOUR_SERVICE_ID;
@@ -19,42 +22,40 @@ export default function ContactMe() {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setShowLoading(true)
 
-    emailjs
-      .sendForm(
-        String(REACT_APP_YOUR_SERVICE_ID),
-        String(REACT_APP_YOUR_TEMPLATE_ID),
-        e.currentTarget,
-        String(REACT_APP_YOUR_USER_ID)
-      )
-      .then(
-        (result) => {
-          setMessage("Menssagem enviada com sucesso");
-          setOpen(true);
-        },
-        (error) => {
-          setMessage("Erro no envio!");
-          setOpen(true);
-        }
-      );
+    emailjs.sendForm(
+      String(REACT_APP_YOUR_SERVICE_ID),
+      String(REACT_APP_YOUR_TEMPLATE_ID),
+      e.currentTarget,
+      String(REACT_APP_YOUR_USER_ID)
+    )
+      .then(() => {
+        setMessage("Menssagem enviada com sucesso");
+        setShowMessage(true);
+        setShowLoading(false)
+      })
+      .catch(() => {
+        setMessage("Erro no envio!");
+        setShowMessage(true);
+        setShowLoading(false)
+      })
+
     e.currentTarget.reset();
   };
 
-  const handleClose = (
-    event: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
+  const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === "clickaway") {
       return;
     }
 
-    setOpen(false);
+    setShowMessage(false);
   };
 
   const actionSnackBar = (
     <ThemeProvider theme={themeUi}>
       <Button size="small" onClick={handleClose}>
-        UNDO
+        FECHAR
       </Button>
       <IconButton
         size="small"
@@ -69,6 +70,22 @@ export default function ContactMe() {
 
   return (
     <StyleContactMe ref={contactMeScroll}>
+      <StyledModal
+        style={{ justifyContent: 'center', alignItems: 'center', height: '90%' }}
+        open={showLoading}
+        BackdropComponent={Backdrop}>
+        <>
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: loadingLottie
+            }}
+            height={200}
+            width={200} />
+        </>
+      </StyledModal>
+
       <div className="content">
         <h1>
           <FcVoicemail /> Contate-me <FcVoicemail />
@@ -79,7 +96,7 @@ export default function ContactMe() {
             vertical: "top",
             horizontal: "left",
           }}
-          open={open}
+          open={showMessage}
           autoHideDuration={4000}
           onClose={handleClose}
           message={message}

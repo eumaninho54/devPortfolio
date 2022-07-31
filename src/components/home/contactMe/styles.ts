@@ -39,10 +39,8 @@ const StyleContactMe = styled.section`
     margin-bottom: 10px;
     max-width: 400px;
     width: 95%;
-  
   }
   
-
   @media only screen and (max-width: 760px) {
     h1 {
       font-size: 25px;
