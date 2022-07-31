@@ -1,10 +1,10 @@
 import { StyleProjects, CarouselDiv } from './styles'
 import CardProject from '../cardProject'
-import { SiAngular, SiSass, SiTypescript, SiReact } from 'react-icons/si'
+import { SiAngular, SiSass, SiTypescript, SiReact, SiNodedotjs } from 'react-icons/si'
 import { FcOpenedFolder } from 'react-icons/fc'
 import { BsArrowRight } from 'react-icons/bs'
 import imgCopyNetflix from "../../../assets/copy_netflix.png"
-import imgAuthLogin from "../../../assets/authLogin.png"
+import imgCineApp from "../../../assets/cineapp.png"
 import imgYourCurrency from "../../../assets/yourCurrency.png"
 import Carousel from 'react-elastic-carousel'
 import { RefContext } from '../../../context/refContext';
@@ -41,14 +41,16 @@ export default function Projects() {
                 nameTool_1={<span style={{ color: "#6B94CB" }}>Typescript</span>}
 
                 imgTool_2={<SiReact color="#5ED3F3" />}
-                nameTool_2={<span style={{ color: "#5ED3F3" }}>React</span>}
+                nameTool_2={<span style={{ color: "#5ED3F3" }}>React Native</span>}
 
-                title={'AuthLogin'}
-                text={"Projeto de autenticação de token JWT. Login com Facebook e Google com token guardado em localStorage e liberando rotas."}
-                banner={imgAuthLogin}
+                imgTool_3={<SiNodedotjs color="#4F9640" />}
+                nameTool_3={<span style={{ color: "#4F9640" }}>Node</span>}
 
-                githubLink={"https://github.com/eumaninho54/authLogin"}
-                pageLink={"https://eumaninho54.github.io/authLogin/"} />
+                title={'Cine-app'}
+                text={"App completo de compra de ingressos para cinema. Com aplicação backend para autenticar usuarios e e ingressos."}
+                banner={imgCineApp}
+
+                githubLink={"https://github.com/eumaninho54/cine-app"}/>
 
               <CardProject
                 imgTool_1={<SiTypescript color="#6B94CB" />}
