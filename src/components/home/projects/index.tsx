@@ -47,7 +47,7 @@ export default function Projects() {
                 nameTool_3={<span style={{ color: "#4F9640" }}>Node</span>}
 
                 title={'Cine-app'}
-                text={"App completo de compra de ingressos para cinema. Com aplicação backend para autenticar usuarios e e ingressos."}
+                text={"App completo de compra de ingressos para cinema. Com aplicação backend para autenticar usuarios e ingressos."}
                 banner={imgCineApp}
 
                 githubLink={"https://github.com/eumaninho54/cine-app"}/>
