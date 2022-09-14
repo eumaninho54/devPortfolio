@@ -46,7 +46,7 @@ export default function Projects() {
                 imgTool_3={<SiNodedotjs color="#4F9640" />}
                 nameTool_3={<span style={{ color: "#4F9640" }}>Node</span>}
 
-                title={'Cine-app'}
+                title={'CineApp'}
                 text={"App completo de compra de ingressos para cinema. Com aplicação backend para autenticar usuarios e ingressos."}
                 banner={imgCineApp}
 
