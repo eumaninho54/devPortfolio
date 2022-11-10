@@ -1,9 +1,9 @@
 import { StyleProjects, CarouselDiv } from './styles'
 import CardProject from '../cardProject'
-import { SiAngular, SiSass, SiTypescript, SiReact, SiNodedotjs } from 'react-icons/si'
+import { SiTypescript, SiReact, SiNodedotjs } from 'react-icons/si'
 import { FcOpenedFolder } from 'react-icons/fc'
 import { BsArrowRight } from 'react-icons/bs'
-import imgCopyNetflix from "../../../assets/copy_netflix.png"
+import imgHelpDogs from "../../../assets/helpdogs.png"
 import imgCineApp from "../../../assets/cineapp.png"
 import imgYourCurrency from "../../../assets/yourCurrency.png"
 import Carousel from 'react-elastic-carousel'
@@ -43,6 +43,19 @@ export default function Projects() {
                 imgTool_2={<SiReact color="#5ED3F3" />}
                 nameTool_2={<span style={{ color: "#5ED3F3" }}>React Native</span>}
 
+                title={'HelpDogs'}
+                text={"App de consulta com objetivo principal de divulgar o trabalho da organização ASPCA, organização que busca o direito ao tratamento respeitoso aos animais."}
+                banner={imgHelpDogs}
+
+                githubLink={"https://github.com/eumaninho54/HelpDogs"} />
+
+              <CardProject
+                imgTool_1={<SiTypescript color="#6B94CB" />}
+                nameTool_1={<span style={{ color: "#6B94CB" }}>Typescript</span>}
+
+                imgTool_2={<SiReact color="#5ED3F3" />}
+                nameTool_2={<span style={{ color: "#5ED3F3" }}>React Native</span>}
+
                 imgTool_3={<SiNodedotjs color="#4F9640" />}
                 nameTool_3={<span style={{ color: "#4F9640" }}>Node</span>}
 
@@ -50,7 +63,7 @@ export default function Projects() {
                 text={"App completo de compra de ingressos para cinema. Com aplicação backend para autenticar usuarios e ingressos."}
                 banner={imgCineApp}
 
-                githubLink={"https://github.com/eumaninho54/cine-app"}/>
+                githubLink={"https://github.com/eumaninho54/cine-app"} />
 
               <CardProject
                 imgTool_1={<SiTypescript color="#6B94CB" />}
@@ -64,28 +77,10 @@ export default function Projects() {
                 banner={imgYourCurrency}
 
                 githubLink={"https://github.com/eumaninho54/yourCurrency"} />
-
-              <CardProject
-                imgTool_1={<SiAngular color="#DD0031" />}
-                nameTool_1={<span style={{ color: "#DD0031" }}>Angular</span>}
-
-                imgTool_2={<SiTypescript color="#6B94CB" />}
-                nameTool_2={<span style={{ color: "#6B94CB" }}>Typescript</span>}
-
-                imgTool_3={<SiSass color="#C76494" />}
-                nameTool_3={<span style={{ color: "#C76494" }}>Sass</span>}
-
-                title={'Copy-Netflix'}
-                text={"Uma cópia completa do site da Netflix, construido inteiramente em Angular, utilizando uma api pública para trazer os dados dos filmes."}
-                banner={imgCopyNetflix}
-
-                githubLink={"https://github.com/eumaninho54/Copy-Netflix"}
-                pageLink={"https://eumaninho54.github.io/Copy-Netflix/"} />
             </Carousel>
           </CarouselDiv>
         </div>
       </div>
-
     </StyleProjects>
   )
 }
