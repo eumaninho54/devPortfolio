@@ -1,6 +1,6 @@
 import StyleAboutMe from './styles'
 import { FcCheckmark } from 'react-icons/fc';
-import AngeloPhoto from '../../../assets/y.jpg'
+import AngeloPhoto from '../../../assets/eu.jpg'
 import Points from '../../../assets/points.png'
 import { RefContext } from '../../../context/refContext';
 import { useContext } from 'react';
